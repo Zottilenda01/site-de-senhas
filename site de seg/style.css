@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Libre+Barcode+39+Extended+Text&family=Micro+5+Charted&family=Monoton&family=Zen+Kaku+Gothic+Antique&display=swap');
+:root{
+    --cor-da-letra: rgb(115, 255, 0);
+    --cor-de-fundo: rgb(225, 0, 255);
+    --fundo-senha:  rgb(0, 155, 64);
+    --fundo-texto: rgb(255, 0, 0);
+    --borda: rgb(54, 138, 153);  
+    --fonte:"Danfo", "serif";
+    --fonte2:"Libre Barcode 39 Extended Text", "system-ui";
+}
+
+body{
+    color: var(--cor-da-letra);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte);
+}
+.titulo-principal{
+    font-size: 77px;
+    font-family:var(--fonte2);
+    color: rgb(255, 8, 0);
+}
+.titulo-secundario{
+    font-size: 50px;
+}
