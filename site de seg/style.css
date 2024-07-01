@@ -3,6 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Danfo&family=Libre+Barcode+39+Extended+Text&family=Micro+5+Charted&family=Monoton&family=Zen+Kaku+Gothic+Antique&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 :root{
     --cor-da-letra: rgb(30, 255, 0);
     --cor-de-fundo: rgb(225, 0, 255);
@@ -12,6 +14,7 @@
     --fonte:"Danfo", "serif";
     --fonte2:"Libre Barcode 39 Extended Text", "system-ui";
     --fonte3:"Jacquard 24 Charted", system-ui;
+    --fonte4:"Playwrite MX";
 }
 
 body{
@@ -29,13 +32,15 @@ body{
 }
 .conteudo{
 
+    width: 1200px;
+    margin: 0 auto;
     text-align: center;
     font-size: 35px;
     }
     
-    .img{
+img{
     
-    width: 80px;
+    width: 90px;
     }
 
     .conteudo-titulo{
@@ -62,3 +67,14 @@ body{
         outline: none;
         background-color: blueviolet;
     }
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--borda);
+    margin-top: 40px;
+    padding: 15px;
+}
+.parametro-titulo{
+    font-family: var(--fonte4);
+    font-size: 40px;
+    color: rgb(46, 184, 87);
+}
