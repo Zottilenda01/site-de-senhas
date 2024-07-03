@@ -1,34 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Danfo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Danfo&family=Libre+Barcode+39+Extended+Text&family=Micro+5+Charted&family=Monoton&family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Pacifico&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Jacquard+24+Charted&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton+SC&family=Pacifico&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
 :root{
-    --cor-da-letra: rgb(30, 255, 0);
+    --cor-da-letra:none;
     --cor-de-fundo: rgb(225, 0, 255);
-    --fundo-senha:  rgb(0, 247, 255);
-    --fundo-texto: rgb(255, 0, 0);
-    --borda: rgb(17, 0, 255);  
-    --fonte:"Danfo", "serif";
-    --fonte2:"Libre Barcode 39 Extended Text", "system-ui";
-    --fonte3:"Jacquard 24 Charted", system-ui;
+    --fundo-senha:  linear-gradient(to right, rgb(0, 238, 255) , rgb(0, 0, 0) 35%);
+    --fundo-texto: linear-gradient(to bottom right, purple 15%, black 65%);
+    --borda: rgb(255, 255, 255);  
+    --fonte:"Anton SC", sans-serif;
+    --fonte2: "Pacifico", cursive;
+    --fonte3:"Alfa Slab One", serif;
     --fonte4:"Playwrite MX";
 }
 
 body{
     color: var(--cor-da-letra);
-    background-color: var(--cor-de-fundo);
+    background-image: linear-gradient(to right, rgb(70, 186, 221), rgb(0, 0, 0));
     font-family: var(--fonte);
 }
 .titulo-principal{
     font-size: 77px;
     font-family:var(--fonte2);
-    color: rgb(255, 8, 0);
+    color: rgb(33, 63, 119);
 }
 .titulo-secundario{
-    font-size: 50px;
+    background-image: linear-gradient(to bottom, rgb(28, 0, 128), black 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
 }
 .conteudo{
 
@@ -49,15 +53,16 @@ img{
     }
     .conteudo-senha{
         margin-top: 80px;
-        background: var(--fundo-senha);
         padding: 10px;
         border-bottom: 10px solid var(--borda);
-        color: rgb(255, 0, 255);
+        background-image: linear-gradient(to top left, black, purple);
         font-family: var(--fonte3);
         font-size: 50px;
+        color: var(--cor-gradient);
+       
     }
     #campo-senha{
-        background-color: var(--fundo-senha) ;
+        background-image: var(--fundo-senha) ;
         border:none;
         color: var(--cor-da-letra);
         width: 70%;
@@ -65,16 +70,30 @@ img{
     }
     #campo-senha:focus{
         outline: none;
-        background-color: blueviolet;
+        background-color: rgb(115, 98, 192);
     }
 .parametro{
-    background-color: var(--fundo-texto);
+    background-image: var(--fundo-texto);
     border: 2px solid var(--borda);
     margin-top: 40px;
     padding: 15px;
 }
 .parametro-titulo{
     font-family: var(--fonte4);
+    text-align: left;
+    margin-top: 0%;
     font-size: 40px;
-    color: rgb(46, 184, 87);
+    color: rgb(0, 0, 0);
+}
+.parametro-senha-titulo{
+    justify-content: space-around;
+    background-image: linear-gradient( rgb(28, 0, 128), black);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.parametro-coluna-senha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
