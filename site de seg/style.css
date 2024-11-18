@@ -134,3 +134,35 @@ img{
 label{
     font-size: 30px;
 }
+.fraca{
+    height: 40px;
+    width: 30%;
+    background-color: red;
+    position:relative;
+    bottom:40px;
+}
+
+.parametro-senha-textos{
+    display:flex;
+    justify-content: space-between;
+    color: var(--fundo-senha);
+}
+
+.media{
+    height: 40px;
+    width: 63%;
+    background-color: rgb(255, 196, 0);
+    position:relative;
+    bottom:40px;
+}
+
+.forte{
+    height: 40px;
+    width: 100%;
+    background-color: rgb(43, 255, 0);
+    position:relative;
+    bottom:40px;
+}
+.parametro-senha-textos{
+    color: aliceblue;
+}
