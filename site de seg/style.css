@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 :root{
-    --cor-da-letra:none;
+    --cor-da-letra:white;
     --cor-de-fundo: rgb(225, 0, 255);
     --fundo-senha:  linear-gradient(to right, rgb(0, 238, 255) , rgb(0, 0, 0) 35%);
     --fundo-texto: linear-gradient(to bottom right, purple 15%, black 65%);
